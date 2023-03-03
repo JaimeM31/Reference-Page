@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>5.10 Random Numbers</title>
+</head>
+
+<body>
+  <h1>5.10 Random Numbers</h1>
+  <section>
+    <h2>Notes</h2>
+    <p><b>Random Numbers</b> are useful in software development for many reasons- game mechanics, generating
+      usernames/passwords, anytime you need something seemingly unpredictable.</p>
+    <p><b>Pseudo-Random Numbers</b>- computers are just big calculators solving formulas and cant create truly random
+      numbers, but instead use an algorith that generates numbers that seem random.</p>
+    <h1>Random Numbers in JS</h1>
+    <p>Javascript provides a number of functions that are useful for generating random numbers
+    <ul>
+      <li><code>Math.random()</code> is a function that returns a pseudo-random number beetween 0 and 1not uncluding 1
+      </li>
+      <li><code>Math.floor()</code> is a function thatr takes a decimal number and rounds it down - chops off the
+        decimal part</li>
+    </ul>
+    </p>
+    <button onclick="alert(Math.random())">Test <code>Math.Random</code></button>
+    <button onclick="alert(Math.floor(3.12456))">Test <code>Math.floor</code></button>
+    <h3> Random number Calculations</h3>
+    <p>To produce a random integer from a min value to a max value (including the min and the max) use this calculation
+    </p>
+    <p><code>math.floor(Math.random() * (max + 1)) + min</code></p>
+    <b><u>Example</u></b>
+    <p> Genrate a random number from 1 to 10 and store it in a variable</p>
+    <code>var randNum = Math.floor(Math.random() * 11) + 1></code>
+    </p>
+    <button onclick="example()">generate random num from 1 to 10</button>
+    <script>
+      function example(){
+        var randNum = Math.floor(Math.random() * 11) + 1;
+        alert(randNum)
+      }
+    </script>
+  </section>
+</body>
+
+</html>
