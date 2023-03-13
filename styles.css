@@ -1,3 +1,7 @@
 body{
-  background-color: aqua;
+  background-color: Gray;
+}
+section{
+  border-radius: 10px;
+  background-color: rgb(175, 170, 170);
 }

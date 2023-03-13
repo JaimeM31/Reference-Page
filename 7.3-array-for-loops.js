@@ -1,6 +1,9 @@
 // Example 1: Print every element in an array
 console.log("Example 1 output below");
 var letters = ["a", "b", "c", "d"];
+for (var i = 0; i < letters.length; i++){
+  console.log(letters[i]);
+}
 
 // Bonus: Define function to print an array passed as a parameter
 
