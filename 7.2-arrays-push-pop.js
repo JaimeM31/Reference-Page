@@ -45,7 +45,7 @@ weekend.push("Saturday", "Sunday")
 console.log(weekend)
 printDays();
 console.log(weekend[0]);
-console.log(weekend[1])
+console.log(weekend[1]);
 
 }
 
