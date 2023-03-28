@@ -22,20 +22,67 @@
     <h2>Notes</h2>
     <h3>Search Algorithms</h3>
     <p>
+      Algorithm Steps
+      1. Get array and target values
+      2. Set a counter to i = 0
+      3. Check if the element at arr[i] is equa; tp the target values
+      4. If element matches, return index (i). Otherwise, increment i by ny 1 and repeat step 3
+      5. If the index is greater than the last index of the arrau, return -1 to indicate the target value was not found.
 
     </p>
 
     <h3>Linear Search Algorithm</h3>
+    Linear (or sequential) search checks each element in an array for a target value from start (i = 0) to end (i = length – 1) until the target is found or the end of the array is reached.​
+
+Algorithm Steps​
+
+Get array and target value​
+
+Set a counter to i = 0​
+
+Check if the element at arr[i] is equal to the target value​
+
+If element matches, return index (i). Otherwise, increment i by 1 and repeat step 3​
+
+If the index is greater than the last index of the array, return -1 to indicate the target value was not found 
     <p>
 
     </p>
 
     <h3>Binary Search Algorithm</h3>
+    Binary search requires the data to be sorted from least to greatest​
+
+Algorithm Steps​
+
+Sort the array in ascending order​
+
+Set the low index to 0 and high index to length – 1​
+
+Set the middle index to the average of the low and high indices​
+
+If the middle index is the target, return the middle index​
+
+If the target element is less than the element at the middle index, set the high index to the middle index – 1​
+
+If the target element is greater than the element at the middle index, set the low index to the middle index + 1​
+
+Repeat steps 3-6 until it is found, or the low and high index are equal in which case, the target is not in the array
     <p>
 
     </p>
 
     <h3>Algorithm Efficiency</h3>
+    Algorithm efficiency is often represented by how many maximum steps it would take for the algorithm to run​
+
+Computer scientists use what is called “Big O” notation to represent this​
+
+The efficiency of the linear search algorithm is O(n) where n is the number of elements in the array to be searched​
+
+O(n) means that that maximum number of steps it will take to find an element in an array is equal to the number of elements in the array​
+
+Binary search has efficiency O(log2 n)​
+
+An array with 100 elements would take a maximum of log2 100 which is equal to 6.64 so between 6 and 7 steps 
     <p>
 
     </p>
