@@ -48,7 +48,7 @@ function problem1(){
 
 
 }
-console.log(product)
+
 
 // Start function for problem #2
 function problem2(){
@@ -60,7 +60,20 @@ function problem2(){
 // Start function for problem #3
 function problem3(){
   console.log("Problem 3 output below");
+  var testArr = [1, 2, 3, 4];
+  var result = doublelist(testArr);
+  console.log(result);
 
+}
+
+function doublelist(arr){
+  var result = [];
+  for (var i = 0; i < arr.length; i++){
+    var val = arr[i];
+    result.push(val);
+    result.push(val);
+  }
+  return result
 }
 
 
